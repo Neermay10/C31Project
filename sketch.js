@@ -1,4 +1,6 @@
-const {Engine,World,Bodies}=Matter;
+const Engine = Matter.Engine;
+const World = Matter.World;
+const Bodies = Matter.Bodies;
 
 var engine,world;
 var grd;
@@ -16,7 +18,7 @@ function setup() {
   grd = new Ground(width/2,height-10,width,20);
 
   for (var i=0;i<9;i++){
-    dv.push(new Ground(0+i*50,height-70,5,100))
+    dv.push(new Ground(0+i*66.7,height-70,5,200))
   }
 
   for(var r = 80;r<550;r+=40){
